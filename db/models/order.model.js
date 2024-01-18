@@ -29,7 +29,9 @@ const orderSchema = {
     references: {
       model: CUSTOMER_TABLE,
       key: 'id',
-    }
+    },
+    onUpdate: 'CASCADE',
+    onDelete: 'SET NULL',
   },
   total: {
     type: DataTypes.VIRTUAL,

@@ -43,9 +43,9 @@ const customerSchema = {
     references: {
       model: USER_TABLE,
       key: 'id',
-      onUpdate: 'CASCADE',
-      onDelete: 'SET NULL',
     },
+    onUpdate: 'CASCADE',
+    onDelete: 'SET NULL',
   },
 };
 
