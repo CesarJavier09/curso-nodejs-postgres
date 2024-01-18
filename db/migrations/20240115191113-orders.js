@@ -1,5 +1,5 @@
 'use strict';
-const {ORDER_TABLE,orderSchema} = require('./../models/order.model');
+const {ORDER_TABLE,orderSchema} = require('../models/order.model');
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
