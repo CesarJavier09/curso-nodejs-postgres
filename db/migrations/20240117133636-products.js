@@ -6,12 +6,12 @@ const {ProductSchema, PRODUCT_TABLE} = require('./../models/products.model');
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface) {
-   queryInterface.createTable(CATEGORY_TABLE,CategorySchema);
-   queryInterface.createTable(PRODUCT_TABLE,ProductSchema);
+   await queryInterface.createTable(CATEGORY_TABLE,CategorySchema);
+   await queryInterface.createTable(PRODUCT_TABLE,ProductSchema);
   },
 
   async down (queryInterface) {
-   queryInterface.dropTable(CATEGORY_TABLE);
-   queryInterface.dropTable(PRODUCT_TABLE);
+   await queryInterface.dropTable(CATEGORY_TABLE);
+   await queryInterface.dropTable(PRODUCT_TABLE);
   }
 };
